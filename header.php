@@ -89,6 +89,8 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <input required autocomplete="off" class="form-control" type="text" name="nama_lengkap" id="nama_lengkap">
+                                <div class="valid-feedback v-nama_lengkap">
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-3">
@@ -97,6 +99,8 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <input required autocomplete="off" class="form-control" type="text" name="email" id="email">
+                                <div class="valid-feedback v-email">
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-3 password1">
@@ -105,6 +109,8 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <input required autocomplete="off" class="form-control" type="password" name="password" id="password">
+                                <div class="valid-feedback v-password">
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-3">
@@ -113,11 +119,13 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <input required autocomplete="off" class="form-control" type="password" id="password1">
+                                <div class="valid-feedback v-password1">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Login</button>
+                        <button id="btn-register" name="register" type="button" class="btn btn-primary">register</button>
                     </div>
                 </form>
             </div>

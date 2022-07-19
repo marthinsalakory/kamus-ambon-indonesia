@@ -5,6 +5,8 @@ $(document).ready(function(){
         $('.nama_lengkap').show()
         $('.password1').show()
         $('.modal-footer button').text('Register')
+        $('.modal-footer button').attr('name', 'register')
+        $('.modal-footer button').attr('id', 'btn-register')
     });
     
     $("#login").click(function(){
@@ -12,16 +14,13 @@ $(document).ready(function(){
         $('.nama_lengkap').hide()
         $('.password1').hide()
         $('.modal-footer button').text('Login')
+        $('.modal-footer button').attr('name', 'login')
+        $('.modal-footer button').attr('id', 'btn-login')
     });
 
-    
-    const textarea = document.querySelector('textarea');
-    textarea.addEventListener('keyup', e => {
-        textarea.style.height = "auto";
-        let scHeight = e.target.scrollHeight;
-        textarea.style.height = `${scHeight}px`;
+    $('#btn-login').click(function() {
+        alert('tes');
     });
-
 
     $('#input').keyup(function() {
         var input = $('#input').val();

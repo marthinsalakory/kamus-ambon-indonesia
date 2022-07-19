@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<div id="beranda" class="container-fluid mt-5 text-center text-light fw-bold position-relative">
+<div id="beranda" class="container-fluid text-center text-light fw-bold position-relative">
     <div class="position-absolute top-50 start-50 translate-middle" style="width: 100%;">
         <img src="assets/img/kamus.png" alt="logo" width="300px">
         <h1 class="display-3">SELAMAT DATANG DI KAMAN</h1>
