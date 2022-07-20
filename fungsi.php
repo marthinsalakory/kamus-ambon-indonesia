@@ -26,3 +26,24 @@ function nav_on($name)
     }
     return null;
 }
+
+if (isset($_POST['login'])) {
+    if ($username == 'admin' && $passwword == 'admin') {
+        // $_SESSION['login'] = true;
+        $script_name = explode('/', $_SERVER["SCRIPT_NAME"]);
+        $phpname = end($script_name);
+        echo "<script>alert('Login Success');window.location = '<?= $phpname; ?>';</script>";
+    } else {
+        $script_name = explode('/', $_SERVER["SCRIPT_NAME"]);
+        $phpname = end($script_name);
+        echo "<script>alert('Login Failed');window.location = '<?= $phpname; ?>';</script>";
+    }
+}
+
+function is_login()
+{
+    if (isset($_SESSION['login'])) {
+        return true;
+    }
+    return false;
+}

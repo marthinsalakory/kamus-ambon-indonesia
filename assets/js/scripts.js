@@ -18,10 +18,6 @@ $(document).ready(function(){
         $('.modal-footer button').attr('id', 'btn-login')
     });
 
-    $('#btn-login').click(function() {
-        alert('tes');
-    });
-
     $('#input').keyup(function() {
         var input = $('#input').val();
         var bahasa1 = $('.title1').text();

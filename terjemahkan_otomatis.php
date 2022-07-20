@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<div class="container pb-5 pt-5">
+<div id="terjemahkan_otomatis" class="container pb-5 pt-5">
     <h3 class="mt-5 text-center mb-5 fw-bold text-primary">TERJEMAHKAN OTOMATIS</h3>
     <div class="row text-center text-primary position-relative">
         <button id="tukar" class="btn position-absolute accordion-flush start-50 top-0 translate-middle-x display-inline-block" style="height: 44px; width: auto;">

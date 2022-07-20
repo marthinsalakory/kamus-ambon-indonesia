@@ -58,7 +58,7 @@ body {
 }
 
 #terjemahkan_otomatis {
-    display: inline-block;
+    /* height: 600px; */
 }
 
 textarea:focus {

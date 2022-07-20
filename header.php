@@ -66,8 +66,12 @@
                         </li>
                     </ul>
                     <div>
-                        <button id="register" class="btn text-light" data-bs-toggle="modal" data-bs-target="#idmodal">Daftar</button>
-                        <button id="login" class="btn btn-light text-primary" data-bs-toggle="modal" data-bs-target="#idmodal">Masuk</button>
+                        <?php if (empty(is_login())) : ?>
+                            <button id="register" class="btn text-light" data-bs-toggle="modal" data-bs-target="#idmodal">Daftar</button>
+                            <button id="login" class="btn btn-light text-primary" data-bs-toggle="modal" data-bs-target="#idmodal">Masuk</button>
+                        <?php else : ?>
+                            <button id="logout" class="btn btn-light text-primary" data-bs-toggle="modal" data-bs-target="#idmodal">Logout</button>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -85,21 +89,21 @@
                     <div class="modal-body">
                         <div class="row nama_lengkap">
                             <div class="col-md-5 col-sm-12">
-                                <label class="form-label" for="email">Nama Lengkap : </label>
+                                <label class="form-label" for="nama_lengkap">Nama Lengkap : </label>
                             </div>
                             <div class="col-md-7 col-sm-12">
-                                <input required autocomplete="off" class="form-control" type="text" name="nama_lengkap" id="nama_lengkap">
+                                <input autocomplete="off" required autocomplete="off" class="form-control" type="text" name="nama_lengkap" id="nama_lengkap">
                                 <div class="valid-feedback v-nama_lengkap">
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-5 col-sm-12">
-                                <label class="form-label" for="email">Email : </label>
+                                <label class="form-label" for="username">Username : </label>
                             </div>
                             <div class="col-md-7 col-sm-12">
-                                <input required autocomplete="off" class="form-control" type="text" name="email" id="email">
-                                <div class="valid-feedback v-email">
+                                <input autocomplete="off" required autocomplete="off" class="form-control" type="text" name="username" id="username">
+                                <div class="valid-feedback v-username">
                                 </div>
                             </div>
                         </div>
@@ -108,7 +112,7 @@
                                 <label class="form-label" for="password">Password : </label>
                             </div>
                             <div class="col-md-7 col-sm-12">
-                                <input required autocomplete="off" class="form-control" type="password" name="password" id="password">
+                                <input autocomplete="off" required autocomplete="off" class="form-control" type="password" name="password" id="password">
                                 <div class="valid-feedback v-password">
                                 </div>
                             </div>
@@ -118,14 +122,14 @@
                                 <label class="form-label" for="password1">Konfirmasi Password : </label>
                             </div>
                             <div class="col-md-7 col-sm-12">
-                                <input required autocomplete="off" class="form-control" type="password" id="password1">
+                                <input autocomplete="off" required autocomplete="off" class="form-control" type="password" id="password1">
                                 <div class="valid-feedback v-password1">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="btn-register" name="register" type="button" class="btn btn-primary">register</button>
+                        <button id="btn-register" name="register" type="submit" class="btn btn-primary">register</button>
                     </div>
                 </form>
             </div>
